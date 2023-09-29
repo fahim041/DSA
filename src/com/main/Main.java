@@ -1,14 +1,16 @@
 package com.main;
 
-import datastructure.DynamicArrays;
+import datastructure.*;
 
 public class Main {
     public static void main(String[] args) {
-        DynamicArrays dynamicArrays = new DynamicArrays();
-        dynamicArrays.push(6);
-        dynamicArrays.push(10);
-        dynamicArrays.push(11);
-        dynamicArrays.insert(2, 22);
-        System.out.println(dynamicArrays.get(2));
+        LinkedList linkedList = new LinkedList();
+        linkedList.insertEnd(4);
+        linkedList.insertEnd(7);
+        linkedList.insertEnd(2);
+        linkedList.removeStart();
+        linkedList.removeStart();
+        linkedList.removeStart();
+        linkedList.print();
     }
 }
